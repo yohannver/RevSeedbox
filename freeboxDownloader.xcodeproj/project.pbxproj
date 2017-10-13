@@ -106,7 +106,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		7B06F3E51DC27F50007FA408 /* Modèles de données */ = {
+		280AB2271F914D04002CF0A0 /* Modèles */ = {
+			isa = PBXGroup;
+			children = (
+				280AB2291F914E89002CF0A0 /* Modèles de données */,
+				7B93C6D01DC1053A00F0782E /* HttpRequestFreebox.swift */,
+				7B36CFC41DBCF9C300541C44 /* HMAC.swift */,
+			);
+			name = "Modèles";
+			path = "Modèles";
+			sourceTree = "<group>";
+		};
+		280AB2291F914E89002CF0A0 /* Modèles de données */ = {
 			isa = PBXGroup;
 			children = (
 				7B36CFC31DBCF9C300541C44 /* DownloadDetail.swift */,
@@ -123,16 +134,37 @@
 				7B8E0DF41DD388AD009D4F8F /* DlBlockListConfig.swift */,
 			);
 			name = "Modèles de données";
+			path = "Modèles de données";
 			sourceTree = "<group>";
 		};
-		7B06F3E61DC27F70007FA408 /* Modèles */ = {
+		280AB22A1F915014002CF0A0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				7B06F3E51DC27F50007FA408 /* Modèles de données */,
-				7B93C6D01DC1053A00F0782E /* HttpRequestFreebox.swift */,
-				7B36CFC41DBCF9C300541C44 /* HMAC.swift */,
+				7B93C6CE1DBE96AE00F0782E /* SplashScreenViewController.swift */,
+				7B36CFB31DBCF8B300541C44 /* DownloadsViewController.swift */,
+				7B30AE121DC370B000ECB6E1 /* DownloadTableViewCell.swift */,
+				7BA865F91DC2613E002803AA /* DownloadDetailTableViewController.swift */,
+				7B24AA291DE1AC10008CB56B /* BrowserViewController.swift */,
+				280AB22B1F9150C3002CF0A0 /* Options */,
 			);
-			name = "Modèles";
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		280AB22B1F9150C3002CF0A0 /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				7B3846761DD5139C00E7EC66 /* SettingsTableViewController.swift */,
+				7B3846791DD519EB00E7EC66 /* FreeboxGeneralTableViewController.swift */,
+				7B38467D1DD61ABF00E7EC66 /* SpeedLimitTableViewController.swift */,
+				7B38467F1DD61F8900E7EC66 /* ChoiceModeTableViewController.swift */,
+				7BAE746A1DD65DAF00025FA2 /* DownloadsGeneralOptionsTableViewController.swift */,
+				7BAE74701DD7462A00025FA2 /* NewsgroupTableViewController.swift */,
+				7BAE746C1DD66CDA00025FA2 /* TorrentTableViewController.swift */,
+				7BAE746E1DD66D3F00025FA2 /* EncryptionConnexionsTableViewController.swift */,
+				7BAE74721DD74B8300025FA2 /* FeedsTableViewController.swift */,
+				7BAE74741DD74F8B00025FA2 /* BlockListTableViewController.swift */,
+			);
+			path = Options;
 			sourceTree = "<group>";
 		};
 		7B36CFA51DBCF8B300541C44 = {
@@ -156,45 +188,15 @@
 		7B36CFB01DBCF8B300541C44 /* freeboxDownloader */ = {
 			isa = PBXGroup;
 			children = (
+				280AB22A1F915014002CF0A0 /* Controllers */,
+				280AB2271F914D04002CF0A0 /* Modèles */,
 				7B36CFB11DBCF8B300541C44 /* AppDelegate.swift */,
 				7B36CFB51DBCF8B300541C44 /* Main.storyboard */,
 				7B36CFB81DBCF8B300541C44 /* Assets.xcassets */,
 				7B36CFBA1DBCF8B300541C44 /* LaunchScreen.storyboard */,
 				7B36CFBD1DBCF8B300541C44 /* Info.plist */,
-				7BA865F81DC26119002803AA /* Controllers */,
-				7B06F3E61DC27F70007FA408 /* Modèles */,
 			);
 			path = freeboxDownloader;
-			sourceTree = "<group>";
-		};
-		7BA865F81DC26119002803AA /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				7BAE74691DD63AE500025FA2 /* Options */,
-				7B93C6CE1DBE96AE00F0782E /* SplashScreenViewController.swift */,
-				7B36CFB31DBCF8B300541C44 /* DownloadsViewController.swift */,
-				7B30AE121DC370B000ECB6E1 /* DownloadTableViewCell.swift */,
-				7BA865F91DC2613E002803AA /* DownloadDetailTableViewController.swift */,
-				7B24AA291DE1AC10008CB56B /* BrowserViewController.swift */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
-		7BAE74691DD63AE500025FA2 /* Options */ = {
-			isa = PBXGroup;
-			children = (
-				7B3846761DD5139C00E7EC66 /* SettingsTableViewController.swift */,
-				7B3846791DD519EB00E7EC66 /* FreeboxGeneralTableViewController.swift */,
-				7B38467D1DD61ABF00E7EC66 /* SpeedLimitTableViewController.swift */,
-				7B38467F1DD61F8900E7EC66 /* ChoiceModeTableViewController.swift */,
-				7BAE746A1DD65DAF00025FA2 /* DownloadsGeneralOptionsTableViewController.swift */,
-				7BAE74701DD7462A00025FA2 /* NewsgroupTableViewController.swift */,
-				7BAE746C1DD66CDA00025FA2 /* TorrentTableViewController.swift */,
-				7BAE746E1DD66D3F00025FA2 /* EncryptionConnexionsTableViewController.swift */,
-				7BAE74721DD74B8300025FA2 /* FeedsTableViewController.swift */,
-				7BAE74741DD74F8B00025FA2 /* BlockListTableViewController.swift */,
-			);
-			name = Options;
 			sourceTree = "<group>";
 		};
 		C2C6ACA58D734AA8CE6B62D9 /* Frameworks */ = {
