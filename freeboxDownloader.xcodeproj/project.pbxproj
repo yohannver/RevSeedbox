@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B24AA2A1DE1AC10008CB56B /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B24AA291DE1AC10008CB56B /* BrowserViewController.swift */; };
+		7B30AE131DC370B000ECB6E1 /* DownloadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B30AE121DC370B000ECB6E1 /* DownloadTableViewCell.swift */; };
+		7B36CFB21DBCF8B300541C44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B36CFB11DBCF8B300541C44 /* AppDelegate.swift */; };
+		7B36CFB41DBCF8B300541C44 /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B36CFB31DBCF8B300541C44 /* DownloadsViewController.swift */; };
+		7B36CFB71DBCF8B300541C44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B36CFB51DBCF8B300541C44 /* Main.storyboard */; };
+		7B36CFB91DBCF8B300541C44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B36CFB81DBCF8B300541C44 /* Assets.xcassets */; };
+		7B36CFBC1DBCF8B300541C44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B36CFBA1DBCF8B300541C44 /* LaunchScreen.storyboard */; };
+		7B36CFC51DBCF9C300541C44 /* DownloadDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B36CFC31DBCF9C300541C44 /* DownloadDetail.swift */; };
+		7B36CFC61DBCF9C300541C44 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B36CFC41DBCF9C300541C44 /* HMAC.swift */; };
+		7B36CFEC1DBE730700541C44 /* ConnectionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B36CFEB1DBE730700541C44 /* ConnectionStatus.swift */; };
+		7B36CFEE1DBE7BBB00541C44 /* ConnectionConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B36CFED1DBE7BBB00541C44 /* ConnectionConfiguration.swift */; };
+		7B3846771DD5139C00E7EC66 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3846761DD5139C00E7EC66 /* SettingsTableViewController.swift */; };
+		7B38467A1DD519EB00E7EC66 /* FreeboxGeneralTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3846791DD519EB00E7EC66 /* FreeboxGeneralTableViewController.swift */; };
+		7B38467E1DD61ABF00E7EC66 /* SpeedLimitTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B38467D1DD61ABF00E7EC66 /* SpeedLimitTableViewController.swift */; };
+		7B3846801DD61F8900E7EC66 /* ChoiceModeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B38467F1DD61F8900E7EC66 /* ChoiceModeTableViewController.swift */; };
+		7B8E0DE91DD375EB009D4F8F /* DownloadConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8E0DE81DD375EB009D4F8F /* DownloadConfiguration.swift */; };
+		7B8E0DEB1DD3853A009D4F8F /* DlThrottlingConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8E0DEA1DD3853A009D4F8F /* DlThrottlingConfig.swift */; };
+		7B8E0DED1DD385FB009D4F8F /* DlRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8E0DEC1DD385FB009D4F8F /* DlRate.swift */; };
+		7B8E0DEF1DD3869A009D4F8F /* DlNewsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8E0DEE1DD3869A009D4F8F /* DlNewsConfig.swift */; };
+		7B8E0DF11DD38768009D4F8F /* DlBtConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8E0DF01DD38768009D4F8F /* DlBtConfig.swift */; };
+		7B8E0DF31DD38867009D4F8F /* DlFeedConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8E0DF21DD38867009D4F8F /* DlFeedConfig.swift */; };
+		7B8E0DF51DD388AD009D4F8F /* DlBlockListConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8E0DF41DD388AD009D4F8F /* DlBlockListConfig.swift */; };
+		7B93C6CF1DBE96AE00F0782E /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B93C6CE1DBE96AE00F0782E /* SplashScreenViewController.swift */; };
+		7B93C6D11DC1053A00F0782E /* HttpRequestFreebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B93C6D01DC1053A00F0782E /* HttpRequestFreebox.swift */; };
+		7BA865FA1DC2613E002803AA /* DownloadDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA865F91DC2613E002803AA /* DownloadDetailTableViewController.swift */; };
+		7BAE746B1DD65DAF00025FA2 /* DownloadsGeneralOptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAE746A1DD65DAF00025FA2 /* DownloadsGeneralOptionsTableViewController.swift */; };
+		7BAE746D1DD66CDA00025FA2 /* TorrentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAE746C1DD66CDA00025FA2 /* TorrentTableViewController.swift */; };
+		7BAE746F1DD66D3F00025FA2 /* EncryptionConnexionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAE746E1DD66D3F00025FA2 /* EncryptionConnexionsTableViewController.swift */; };
+		7BAE74711DD7462A00025FA2 /* NewsgroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAE74701DD7462A00025FA2 /* NewsgroupTableViewController.swift */; };
+		7BAE74731DD74B8300025FA2 /* FeedsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAE74721DD74B8300025FA2 /* FeedsTableViewController.swift */; };
+		7BAE74751DD74F8B00025FA2 /* BlockListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAE74741DD74F8B00025FA2 /* BlockListTableViewController.swift */; };
+		7BEFC7FE1DCF29D40011BC0D /* DiskDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEFC7FD1DCF29D40011BC0D /* DiskDetail.swift */; };
+		7BEFC8001DCF2B880011BC0D /* PartitionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEFC7FF1DCF2B880011BC0D /* PartitionDetail.swift */; };
+		D99F9ACD9C64D9FB9ABC705E /* Pods_freeboxDownloader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D28223CD9D759B608E002DA6 /* Pods_freeboxDownloader.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0862E44E8460E1571CB7EABD /* Pods-freeboxDownloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freeboxDownloader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-freeboxDownloader/Pods-freeboxDownloader.debug.xcconfig"; sourceTree = "<group>"; };
+		7B24AA291DE1AC10008CB56B /* BrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
+		7B30AE121DC370B000ECB6E1 /* DownloadTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadTableViewCell.swift; sourceTree = "<group>"; };
+		7B36CFAE1DBCF8B300541C44 /* freeboxDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = freeboxDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B36CFB11DBCF8B300541C44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7B36CFB31DBCF8B300541C44 /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
+		7B36CFB61DBCF8B300541C44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7B36CFB81DBCF8B300541C44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B36CFBB1DBCF8B300541C44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7B36CFBD1DBCF8B300541C44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B36CFC31DBCF9C300541C44 /* DownloadDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadDetail.swift; sourceTree = "<group>"; };
+		7B36CFC41DBCF9C300541C44 /* HMAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
+		7B36CFC91DBD0A9E00541C44 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		7B36CFEB1DBE730700541C44 /* ConnectionStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionStatus.swift; sourceTree = "<group>"; };
+		7B36CFED1DBE7BBB00541C44 /* ConnectionConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionConfiguration.swift; sourceTree = "<group>"; };
+		7B3846761DD5139C00E7EC66 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		7B3846791DD519EB00E7EC66 /* FreeboxGeneralTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeboxGeneralTableViewController.swift; sourceTree = "<group>"; };
+		7B38467D1DD61ABF00E7EC66 /* SpeedLimitTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedLimitTableViewController.swift; sourceTree = "<group>"; };
+		7B38467F1DD61F8900E7EC66 /* ChoiceModeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceModeTableViewController.swift; sourceTree = "<group>"; };
+		7B8E0DE81DD375EB009D4F8F /* DownloadConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadConfiguration.swift; sourceTree = "<group>"; };
+		7B8E0DEA1DD3853A009D4F8F /* DlThrottlingConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DlThrottlingConfig.swift; sourceTree = "<group>"; };
+		7B8E0DEC1DD385FB009D4F8F /* DlRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DlRate.swift; sourceTree = "<group>"; };
+		7B8E0DEE1DD3869A009D4F8F /* DlNewsConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DlNewsConfig.swift; sourceTree = "<group>"; };
+		7B8E0DF01DD38768009D4F8F /* DlBtConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DlBtConfig.swift; sourceTree = "<group>"; };
+		7B8E0DF21DD38867009D4F8F /* DlFeedConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DlFeedConfig.swift; sourceTree = "<group>"; };
+		7B8E0DF41DD388AD009D4F8F /* DlBlockListConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DlBlockListConfig.swift; sourceTree = "<group>"; };
+		7B93C6CE1DBE96AE00F0782E /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		7B93C6D01DC1053A00F0782E /* HttpRequestFreebox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequestFreebox.swift; sourceTree = "<group>"; };
+		7BA865F91DC2613E002803AA /* DownloadDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadDetailTableViewController.swift; sourceTree = "<group>"; };
+		7BAE746A1DD65DAF00025FA2 /* DownloadsGeneralOptionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadsGeneralOptionsTableViewController.swift; sourceTree = "<group>"; };
+		7BAE746C1DD66CDA00025FA2 /* TorrentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TorrentTableViewController.swift; sourceTree = "<group>"; };
+		7BAE746E1DD66D3F00025FA2 /* EncryptionConnexionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionConnexionsTableViewController.swift; sourceTree = "<group>"; };
+		7BAE74701DD7462A00025FA2 /* NewsgroupTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsgroupTableViewController.swift; sourceTree = "<group>"; };
+		7BAE74721DD74B8300025FA2 /* FeedsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedsTableViewController.swift; sourceTree = "<group>"; };
+		7BAE74741DD74F8B00025FA2 /* BlockListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockListTableViewController.swift; sourceTree = "<group>"; };
+		7BEFC7FD1DCF29D40011BC0D /* DiskDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiskDetail.swift; sourceTree = "<group>"; };
+		7BEFC7FF1DCF2B880011BC0D /* PartitionDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartitionDetail.swift; sourceTree = "<group>"; };
+		8ED3BFCE2EDE9A5DF0F03F81 /* Pods-freeboxDownloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freeboxDownloader.release.xcconfig"; path = "Pods/Target Support Files/Pods-freeboxDownloader/Pods-freeboxDownloader.release.xcconfig"; sourceTree = "<group>"; };
+		D28223CD9D759B608E002DA6 /* Pods_freeboxDownloader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_freeboxDownloader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B36CFAB1DBCF8B300541C44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D99F9ACD9C64D9FB9ABC705E /* Pods_freeboxDownloader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18E7D1420A00716835297F10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0862E44E8460E1571CB7EABD /* Pods-freeboxDownloader.debug.xcconfig */,
+				8ED3BFCE2EDE9A5DF0F03F81 /* Pods-freeboxDownloader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7B06F3E51DC27F50007FA408 /* Modèles de données */ = {
+			isa = PBXGroup;
+			children = (
+				7B36CFC31DBCF9C300541C44 /* DownloadDetail.swift */,
+				7B36CFEB1DBE730700541C44 /* ConnectionStatus.swift */,
+				7B36CFED1DBE7BBB00541C44 /* ConnectionConfiguration.swift */,
+				7BEFC7FD1DCF29D40011BC0D /* DiskDetail.swift */,
+				7BEFC7FF1DCF2B880011BC0D /* PartitionDetail.swift */,
+				7B8E0DE81DD375EB009D4F8F /* DownloadConfiguration.swift */,
+				7B8E0DEA1DD3853A009D4F8F /* DlThrottlingConfig.swift */,
+				7B8E0DEC1DD385FB009D4F8F /* DlRate.swift */,
+				7B8E0DEE1DD3869A009D4F8F /* DlNewsConfig.swift */,
+				7B8E0DF01DD38768009D4F8F /* DlBtConfig.swift */,
+				7B8E0DF21DD38867009D4F8F /* DlFeedConfig.swift */,
+				7B8E0DF41DD388AD009D4F8F /* DlBlockListConfig.swift */,
+			);
+			name = "Modèles de données";
+			sourceTree = "<group>";
+		};
+		7B06F3E61DC27F70007FA408 /* Modèles */ = {
+			isa = PBXGroup;
+			children = (
+				7B06F3E51DC27F50007FA408 /* Modèles de données */,
+				7B93C6D01DC1053A00F0782E /* HttpRequestFreebox.swift */,
+				7B36CFC41DBCF9C300541C44 /* HMAC.swift */,
+			);
+			name = "Modèles";
+			sourceTree = "<group>";
+		};
+		7B36CFA51DBCF8B300541C44 = {
+			isa = PBXGroup;
+			children = (
+				7B36CFB01DBCF8B300541C44 /* freeboxDownloader */,
+				7B36CFAF1DBCF8B300541C44 /* Products */,
+				18E7D1420A00716835297F10 /* Pods */,
+				C2C6ACA58D734AA8CE6B62D9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7B36CFAF1DBCF8B300541C44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B36CFAE1DBCF8B300541C44 /* freeboxDownloader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B36CFB01DBCF8B300541C44 /* freeboxDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				7B36CFB11DBCF8B300541C44 /* AppDelegate.swift */,
+				7B36CFB51DBCF8B300541C44 /* Main.storyboard */,
+				7B36CFB81DBCF8B300541C44 /* Assets.xcassets */,
+				7B36CFBA1DBCF8B300541C44 /* LaunchScreen.storyboard */,
+				7B36CFBD1DBCF8B300541C44 /* Info.plist */,
+				7BA865F81DC26119002803AA /* Controllers */,
+				7B06F3E61DC27F70007FA408 /* Modèles */,
+			);
+			path = freeboxDownloader;
+			sourceTree = "<group>";
+		};
+		7BA865F81DC26119002803AA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7BAE74691DD63AE500025FA2 /* Options */,
+				7B93C6CE1DBE96AE00F0782E /* SplashScreenViewController.swift */,
+				7B36CFB31DBCF8B300541C44 /* DownloadsViewController.swift */,
+				7B30AE121DC370B000ECB6E1 /* DownloadTableViewCell.swift */,
+				7BA865F91DC2613E002803AA /* DownloadDetailTableViewController.swift */,
+				7B24AA291DE1AC10008CB56B /* BrowserViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		7BAE74691DD63AE500025FA2 /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				7B3846761DD5139C00E7EC66 /* SettingsTableViewController.swift */,
+				7B3846791DD519EB00E7EC66 /* FreeboxGeneralTableViewController.swift */,
+				7B38467D1DD61ABF00E7EC66 /* SpeedLimitTableViewController.swift */,
+				7B38467F1DD61F8900E7EC66 /* ChoiceModeTableViewController.swift */,
+				7BAE746A1DD65DAF00025FA2 /* DownloadsGeneralOptionsTableViewController.swift */,
+				7BAE74701DD7462A00025FA2 /* NewsgroupTableViewController.swift */,
+				7BAE746C1DD66CDA00025FA2 /* TorrentTableViewController.swift */,
+				7BAE746E1DD66D3F00025FA2 /* EncryptionConnexionsTableViewController.swift */,
+				7BAE74721DD74B8300025FA2 /* FeedsTableViewController.swift */,
+				7BAE74741DD74F8B00025FA2 /* BlockListTableViewController.swift */,
+			);
+			name = Options;
+			sourceTree = "<group>";
+		};
+		C2C6ACA58D734AA8CE6B62D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B36CFC91DBD0A9E00541C44 /* WebKit.framework */,
+				D28223CD9D759B608E002DA6 /* Pods_freeboxDownloader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B36CFAD1DBCF8B300541C44 /* freeboxDownloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B36CFC01DBCF8B300541C44 /* Build configuration list for PBXNativeTarget "freeboxDownloader" */;
+			buildPhases = (
+				FD09B0B1F6E3EAE21DE2B9C2 /* [CP] Check Pods Manifest.lock */,
+				7B36CFAA1DBCF8B300541C44 /* Sources */,
+				7B36CFAB1DBCF8B300541C44 /* Frameworks */,
+				7B36CFAC1DBCF8B300541C44 /* Resources */,
+				4398F367E97C0D6CCFEE5BE9 /* [CP] Embed Pods Frameworks */,
+				1D062ABEFE516D5891D9C49C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = freeboxDownloader;
+			productName = freeboxDownloader;
+			productReference = 7B36CFAE1DBCF8B300541C44 /* freeboxDownloader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B36CFA61DBCF8B300541C44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Yohann Verdier";
+				TargetAttributes = {
+					7B36CFAD1DBCF8B300541C44 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ZJ9CSW6G84;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7B36CFA91DBCF8B300541C44 /* Build configuration list for PBXProject "freeboxDownloader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B36CFA51DBCF8B300541C44;
+			productRefGroup = 7B36CFAF1DBCF8B300541C44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B36CFAD1DBCF8B300541C44 /* freeboxDownloader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B36CFAC1DBCF8B300541C44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B36CFBC1DBCF8B300541C44 /* LaunchScreen.storyboard in Resources */,
+				7B36CFB91DBCF8B300541C44 /* Assets.xcassets in Resources */,
+				7B36CFB71DBCF8B300541C44 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D062ABEFE516D5891D9C49C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-freeboxDownloader/Pods-freeboxDownloader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4398F367E97C0D6CCFEE5BE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-freeboxDownloader/Pods-freeboxDownloader-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CommonCrypto/CommonCrypto.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CommonCrypto.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-freeboxDownloader/Pods-freeboxDownloader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD09B0B1F6E3EAE21DE2B9C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-freeboxDownloader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B36CFAA1DBCF8B300541C44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B36CFB41DBCF8B300541C44 /* DownloadsViewController.swift in Sources */,
+				7B8E0DF51DD388AD009D4F8F /* DlBlockListConfig.swift in Sources */,
+				7BAE746F1DD66D3F00025FA2 /* EncryptionConnexionsTableViewController.swift in Sources */,
+				7BAE74731DD74B8300025FA2 /* FeedsTableViewController.swift in Sources */,
+				7B36CFEE1DBE7BBB00541C44 /* ConnectionConfiguration.swift in Sources */,
+				7BEFC8001DCF2B880011BC0D /* PartitionDetail.swift in Sources */,
+				7B3846801DD61F8900E7EC66 /* ChoiceModeTableViewController.swift in Sources */,
+				7B24AA2A1DE1AC10008CB56B /* BrowserViewController.swift in Sources */,
+				7B8E0DEF1DD3869A009D4F8F /* DlNewsConfig.swift in Sources */,
+				7BA865FA1DC2613E002803AA /* DownloadDetailTableViewController.swift in Sources */,
+				7B8E0DF31DD38867009D4F8F /* DlFeedConfig.swift in Sources */,
+				7B30AE131DC370B000ECB6E1 /* DownloadTableViewCell.swift in Sources */,
+				7B93C6CF1DBE96AE00F0782E /* SplashScreenViewController.swift in Sources */,
+				7B8E0DF11DD38768009D4F8F /* DlBtConfig.swift in Sources */,
+				7B36CFB21DBCF8B300541C44 /* AppDelegate.swift in Sources */,
+				7B8E0DEB1DD3853A009D4F8F /* DlThrottlingConfig.swift in Sources */,
+				7B3846771DD5139C00E7EC66 /* SettingsTableViewController.swift in Sources */,
+				7BAE746D1DD66CDA00025FA2 /* TorrentTableViewController.swift in Sources */,
+				7B93C6D11DC1053A00F0782E /* HttpRequestFreebox.swift in Sources */,
+				7BAE74711DD7462A00025FA2 /* NewsgroupTableViewController.swift in Sources */,
+				7BAE746B1DD65DAF00025FA2 /* DownloadsGeneralOptionsTableViewController.swift in Sources */,
+				7B38467E1DD61ABF00E7EC66 /* SpeedLimitTableViewController.swift in Sources */,
+				7B36CFC61DBCF9C300541C44 /* HMAC.swift in Sources */,
+				7BAE74751DD74F8B00025FA2 /* BlockListTableViewController.swift in Sources */,
+				7B38467A1DD519EB00E7EC66 /* FreeboxGeneralTableViewController.swift in Sources */,
+				7B8E0DE91DD375EB009D4F8F /* DownloadConfiguration.swift in Sources */,
+				7BEFC7FE1DCF29D40011BC0D /* DiskDetail.swift in Sources */,
+				7B8E0DED1DD385FB009D4F8F /* DlRate.swift in Sources */,
+				7B36CFC51DBCF9C300541C44 /* DownloadDetail.swift in Sources */,
+				7B36CFEC1DBE730700541C44 /* ConnectionStatus.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7B36CFB51DBCF8B300541C44 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B36CFB61DBCF8B300541C44 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7B36CFBA1DBCF8B300541C44 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B36CFBB1DBCF8B300541C44 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B36CFBE1DBCF8B300541C44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B36CFBF1DBCF8B300541C44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B36CFC11DBCF8B300541C44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0862E44E8460E1571CB7EABD /* Pods-freeboxDownloader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZJ9CSW6G84;
+				INFOPLIST_FILE = freeboxDownloader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yohannver.freeboxDownloader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = /Users/yohannverdier/Developer/freeboxDownloader/CommonCrypto;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7B36CFC21DBCF8B300541C44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ED3BFCE2EDE9A5DF0F03F81 /* Pods-freeboxDownloader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZJ9CSW6G84;
+				INFOPLIST_FILE = freeboxDownloader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yohannver.freeboxDownloader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = /Users/yohannverdier/Developer/freeboxDownloader/CommonCrypto;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B36CFA91DBCF8B300541C44 /* Build configuration list for PBXProject "freeboxDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B36CFBE1DBCF8B300541C44 /* Debug */,
+				7B36CFBF1DBCF8B300541C44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B36CFC01DBCF8B300541C44 /* Build configuration list for PBXNativeTarget "freeboxDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B36CFC11DBCF8B300541C44 /* Debug */,
+				7B36CFC21DBCF8B300541C44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B36CFA61DBCF8B300541C44 /* Project object */;
+}

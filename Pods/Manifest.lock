@@ -1,0 +1,15 @@
+PODS:
+  - Alamofire (4.0.1)
+  - CommonCrypto (1.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - CommonCrypto (~> 1.1)
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  CommonCrypto: e18c8416332cca5efe80c197f2a522d471c42626
+
+PODFILE CHECKSUM: 299297e35212f1ce37c7bfd77e3d7b140c10fcd6
+
+COCOAPODS: 1.3.1
