@@ -42,18 +42,22 @@ class SplashScreenViewController: UIViewController {
         _httpRequestFreebox.portServer = USER_DEFAULTS.integer(forKey: HttpRequestFreebox.REMOTE_ACCESS_PORT)
         _httpRequestFreebox.getLocalURLOrIP()
         
+        self.ui_openDownloads.layer.cornerRadius = 10
+        self.ui_buttonAppair.layer.cornerRadius = 10
+        
         //Abonnement au centre de notification
         NotificationCenter.default.addObserver(self, selector: #selector(SplashScreenViewController.unknownStatus),name:NSNotification.Name(rawValue: "unknown"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(SplashScreenViewController.pendingStatus),name:NSNotification.Name(rawValue: "pending"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(SplashScreenViewController.timeOutStatus),name:NSNotification.Name(rawValue: "timeout"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(SplashScreenViewController.grantedStatus),name:NSNotification.Name(rawValue: "granted"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(SplashScreenViewController.deniedStatus),name:NSNotification.Name(rawValue: "denied"), object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(SplashScreenViewController.displayButtonDownloads),name:NSNotification.Name(rawValue: "displayButtonDownloads"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(SplashScreenViewController.openDownloadsList),name:NSNotification.Name(rawValue: "displayDownloadsList"), object: nil)
         
         if let app_tok = _httpRequestFreebox.app_token {
             //si il y a un app_token on se connecte et on récupère les téléchargements, la liste des disques et la configuration
             self.ui_labelConnexion.text = "Connexion en cours"
             ui_openDownloads.isEnabled = false
+            ui_openDownloads.isHidden = true
             ui_activityIndicator.isHidden = false
             ui_labelConnexion.isHidden = false
             ui_buttonAppair.isHidden = true
@@ -65,6 +69,7 @@ class SplashScreenViewController: UIViewController {
         } else {
             //si il n'y a pas d'app_token dans les userdefaults on en demande à l'utilisateur de s'appairer
             self.ui_openDownloads.isEnabled = false
+            self.ui_openDownloads.isHidden = true
             self.ui_labelConnexion.text = "Veuillez vous appairer"
             self.ui_labelConnexion.isHidden = false
             self.ui_buttonAppair.isEnabled = true
@@ -143,11 +148,9 @@ class SplashScreenViewController: UIViewController {
         print("Denied")
     }
     
-    //Affichage des boutons
-    func displayButtonDownloads() {
-        self.ui_labelConnexion.isHidden = true
-        self.ui_activityIndicator.isHidden = true
-        self.ui_openDownloads.isEnabled = true
+    //Affichage de la liste des téléchargements
+    func openDownloadsList() {
+        self.performSegue(withIdentifier: "showDownloads", sender:self)
     }
     
     override func didReceiveMemoryWarning() {

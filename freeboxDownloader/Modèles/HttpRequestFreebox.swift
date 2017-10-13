@@ -424,7 +424,7 @@ class HttpRequestFreebox {
                                 elem1.id! > elem2.id!
                             })
                             print("-----fin de getAllDownloads-----")
-                            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "displayButtonDownloads"), object: nil)
+                            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "displayDownloadsList"), object: nil)
                             NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
                         } else {
                             print("Erreur d'authentification à la freebox (getAllDownloads)")

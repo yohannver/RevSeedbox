@@ -1724,14 +1724,22 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9LZ-ZZ-QJX">
                                 <rect key="frame" x="96" y="316.5" width="183" height="30"/>
-                                <state key="normal" title="Appairer"/>
+                                <color key="backgroundColor" red="0.27823150157928467" green="0.5383598804473877" blue="0.96867078542709351" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Appairer">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="clickAppair:" destination="Rky-ma-tzv" eventType="touchUpInside" id="3Gs-XD-56G"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8NM-7a-oSK">
                                 <rect key="frame" x="66" y="92.5" width="243" height="30"/>
-                                <state key="normal" title="Ouvrir téléchargements"/>
+                                <color key="backgroundColor" red="0.27823150157928467" green="0.5383598804473877" blue="0.96867078542709351" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Ouvrir téléchargements">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="OpenListDownloads:" destination="Rky-ma-tzv" eventType="touchUpInside" id="cXS-0L-wV0"/>
                                     <segue destination="kBX-T2-Fhj" kind="show" identifier="showDownloads" id="L5U-b8-R7k"/>
